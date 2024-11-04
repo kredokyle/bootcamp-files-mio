@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>29</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>25</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Paul</td>
+                <td>28</td>
+                <td>Dubai</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- thead: defines the head of the table, for labels -->
+    <!-- tr: defines 1 row -->
+    <!-- th: defines 1 column heading (bold, centered) -->
+
+    <h2>Colspan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Contact Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mark</td>
+                <td>09123</td>
+                <td>09877</td>
+            </tr>
+            <tr>
+                <td>Tim</td>
+                <td colspan="2">09100</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>Rowspan</h2>
+    <table>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>Mark</td>
+                <td>Time</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Contact Number</th>
+                <td>09123</td>
+                <td>09100</td>
+            </tr>
+            <tr>
+                
+                <td>09456</td>
+                <td>09200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
